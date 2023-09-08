@@ -12,7 +12,7 @@ class ControllerPraDiagnosa {
   }
   static listCategory(req, res, next) {
     Category.findAll({ attributes: atCategory })
-      .then(data => res.send(data))
+      .then(categories => res.send({ categories }))
       .catch(err => next(err))
   }
   static async listSymptomByCategory(req, res, next) {
@@ -21,7 +21,7 @@ class ControllerPraDiagnosa {
         attributes: atCategory,
         include: [{ model: Symptom, attributes: atSymptom }]
       })
-      if (!data) throw { statusCode: 404 }
+      if (!data) throw { code: 404 }
       res.send(data)
     } catch (error) {
       next(error)
@@ -39,11 +39,10 @@ class ControllerPraDiagnosa {
         raw: true,
         nest: true
       })
-      if (!data) throw { statusCode: 404 }
+      if (!data) throw { code: 404 }
       delete data.Category
       res.send(data)
     } catch (error) {
-      console.log(error);
       next(error)
     }
   }
