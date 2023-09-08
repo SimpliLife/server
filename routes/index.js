@@ -3,8 +3,8 @@ const ControllerPraDiagnosa = require("../controllers/ControllerPraDiagnosa")
 
 router
   .get("/", ControllerPraDiagnosa.root)
-  .get("/categories", ControllerPraDiagnosa.root)
-  .get("/categories/:id/symptoms", ControllerPraDiagnosa.root)
-  .get("/symptoms/:id", ControllerPraDiagnosa.root)
+  .get("/categories", ControllerPraDiagnosa.listCategory)
+  .get("/categories/:id/symptoms", ControllerPraDiagnosa.listSymptomByCategory)
+  .get("/symptoms/:id", ControllerPraDiagnosa.symptomById)
 
 module.exports = router
