@@ -2,7 +2,7 @@
 
 Kita sedang mengembangkan REST API DiagnoAkses Version 1.0
 
-Base URL : `http://localhost:3000/api`
+[➡ API Documentation](https://documenter.getpostman.com/view/20472929/2s9YC1Vtv8)
 
 | Method | Route                   | Description                    |
 | ------ | ------------------------ | ------------------------------|
@@ -12,12 +12,7 @@ Base URL : `http://localhost:3000/api`
 | GET    | /symptoms/:id            | Membaca satu gejala           |
 
 
-## Dikerjakan dengan `github workflow pull request`
-```
-main - dev - branch1 
-           - branch2
-           - branch3
-```
+> **Dikerjakan dengan `github workflow pull request`**
 
 # Model 
 
