@@ -1,0 +1,64 @@
+[
+  {
+    "gejala": "Gejala Umum (Seluruh Tubuh)",
+    "judul": "Tidak enak badan",
+    "pertanyaan": "Apakah anda terus waswas atau khawatir tanpa jelas sebabnya?",
+    "q": {
+      "ya": "KEMUNGKINAN PENYEBAB\nKecemasaran terhadap suatu hal spesifik atau penumbpukan sebagai stress da kekhawatiran bisa menimbulkan perasaan kurang sehat.",
+      "tidak": {
+        "q": "Apakah berat badan Anda turun sendiri sampai 4 kg dalam 10 miggu terakhir?",
+        "ya": "KEMUNGKINAN PENYEBAB\nLINK(58-berat-badan-turun.json)",
+        "tidak": {
+          "q": "Apakah suhu badan Anda sampai 38ᴼC?",
+          "ya": "KEMUNGKINAN PENYEBAB\nSuatu infeksi virus yang menyebabkan rasa tidak enak badan disertai demam.",
+          "tidak": {
+            "q": "Apakah Anda sering meminum alkohol?",
+            "ya": "KEMUNGKINAN PENYEBAB\nKonsumsi alkohol berlebihan bisa merusak kesehatan fisik maupun mental.\nTINDAKAN\nKurangilah konsumsi alkohol sampai batas aman. Bila Anda sulit menguranginya konsultasi ke dokter.",
+            "tidak": {
+              "q": "Apakah Anda sedang minum obat (resep, bebas, maupun rekreasional)?",
+              "ya": "KEMUNGKINAN PENYEBAB DAN TINDAKAN\nBeberapa obat tertentu bisa menimbulkan efek samping merasa bisa menimbulkan edek samping kurang enak badan. Tanyakan ke dokter dan sementara itu hentikan pemakaian semua obat bebas dan obat reaksional.",
+              "tidak": "PERIKSAKAN KE DOKTER, KAMI BERLUM MENDAPATKAN DIAGNOSA LANJUT DARI HAL INI."
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "gejala": "Gejala Berat Badan dan Pertumbuhan",
+    "judul": "Berat badan turun",
+    "pertanyaan": "Apakah turun berat badan Anda sedikit (kurang dari 4 kg dalam 10 minggu)?",
+    "q": {
+      "ya": "KEMUNGKINAN PENYEBAB\nFlukstasi kecil pada berat badan. Selama berat badan anda masih dibatas berat badan ideal seharusnya tidak perlu dicemaskan.\nTINDAKAN\nPerbanyak porsi makanan Anda. Periksalah ke dokter apabila berat and secara terus menurus merosot atau jatuh dari berat badan idea untuk tinggi badan Anda.",
+      "tidak": {
+        "q": "Apakah selera makan Anda sebagus biasanya?",
+        "ya": {
+          "q": "Adakah salah satu gejala berikut?\n- Merasa selalu waswas\n-Berkeringan berlebihan\n- Mata menonjol\n-Tangan gemetar",
+          "ya": "KEMUNGKINAN PENYEBAB\nHipertiroidisme (kelenjar tiroid terlalu aktif) adalah kemungkinan penyebab geja Anda.\nPeriksalah ke dokter.",
+          "tidak": {
+            "q": "Adakah salah satu gejala berikut?\n-Mudah haus\n- Lebih banyak buang air kecil dari biasanya\n- Penglihatan kabur",
+            "ya": "BAWA KE DOKTER DALAM 24 JAM\nKEMUNGKINAN PENYEBAB\nDiabetes melitus adalah sebuah kemungkinan. konsidi ini disebabkan kurangnya produksi hormon insulin. yang diperlukan tubuh untuk memperoleh energi dari gula dan karbohidrat.\nTINDAKAN\nDokter akan memeriksa kadar gula pada darah Anda. Bila diagnosa benar, Anda akan memerlukan saran diet dan gaya hidup yang lebih sehat.",
+            "tidak": {
+              "q": "Apakah Anda berolahraga lebih banyak dari biasanya?",
+              "ya": "KEMUNGKINAN PENYEBAB\nMembakar lebih banyak lebih banyak energi dari yang didapat dari makanan Anda, sangat mungkin sebagai penyebab turunnya berat badan Anda saat ini.\nTINDAKAN\nAnda perlu menambah jumlah dari kalori makann untuk mengimbangi energi yang Anda pakai.",
+              "tidak": "PERIKSAKAN KE DOKTER, KAMI BERLUM MENDAPATKAN DIAGNOSA LANJUT DARI HAL INI."
+            }
+          }
+        },
+        "tidak": {
+          "q": "Adakah satu atau lebih gejala berikut?\n- Diare atau sembelit yang sering kambung\n- Nyeri lambung kambuhan\n- Darah di tinja",
+          "ya": "BAWA KE DOKTER DALAM 24 JAM\nKEMUNGKINAN PENYEBAB\nKelainan di saluran pencernaan kemungkinan penyebab turunnya berat badan Anda, misalnya radang usus halus atau tukak.\nTINDAKAN\n Dokter akan melakukan beberapa tes diagnostik, meliputi tes darah, tes tinja dan kolonskopi.",
+          "tidak": {
+            "q": "Adakah satu atau lebih gejala berikut?\n- Berkeringat berlebihan di malam hari\n- Demam kambuhan\n- Merasa meriang\n-Darah di dahak",
+            "ya": "BAWA KE DOKTER DALAM 24 JAM\nKEMUNGKINAN PENYEBAB\nSebuah infeksi kronis seperti tuberkulosis, penyakit berkait AIDS atau kanker tertentu adalah kemungkinannya.\nTINDAKAN\nDokter akan melakukan tes darah dan mungkin dahak untuk dianalisa dan meminta memeriksa pemeriksaan sinar-X dada, serta beberapa tes lainnya. Dari hasil tes, mungkin akan dirujuk ke spesialis untuk dirawat.",
+            "tidak": {
+              "q": "Adakah satu atau lebih gejala berikut?\n-Sulit berkonsentrasi\n- Sulit tidur\n- Kurang bersemangat\n- Hilang gairah seks",
+              "ya": "KEMUNGKINAN PENYEBAB\nEfek dari depresi kadang-kadang bisa menghilangkan selera makan, yang cukup untuk membuat berat badan merosot.",
+              "tidak": "PERIKSAKAN KE DOKTER, KAMI BERLUM MENDAPATKAN DIAGNOSA LANJUT DARI HAL INI."
+            }
+          }
+        }
+      }
+    }
+  }
+]
