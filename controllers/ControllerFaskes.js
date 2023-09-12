@@ -1,4 +1,4 @@
-const { sequelize, Facility } = require('../models');
+const { sequelize, Facility, Province, City } = require('../models');
 const { Op } = require("sequelize")
 
 class ControllerFaskes {
@@ -70,7 +70,6 @@ class ControllerFaskes {
         output.total = result.length
       } else {
         output.message = "Here is the default output"
-        output.total = result.length
         result = await sequelize.query(
           `select
             *
@@ -94,6 +93,7 @@ class ControllerFaskes {
             type: sequelize.QueryTypes.SELECT,
           }
         );
+        output.total = result.length
       }
       output.facilities = result
       res.status(200).json(output);
@@ -119,17 +119,18 @@ class ControllerFaskes {
       .catch(err => next(err))
   }
   static listCityByProvinces(req, res, next) {
+    if (!req.query.province) return next({ code: 400 })
     City.findAll({
       attributes: ['province', 'city'],
       where: {
-        province: req.params.province
+        province: req.query.province
       }
     })
       .then(data => {
-        if (data.length == 0) throw { code: 404 }
+        if (!data.length) throw { code: 404 }
         res.status(200).json(
           {
-            province: req.params.province,
+            province: req.query.province,
             cities: data
           }
         )
