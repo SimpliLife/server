@@ -10,8 +10,11 @@ Kita sedang mengembangkan REST API DiagnoAkses Version 1.0
 | GET    | /categories              | Daftar kategori gejala                             |
 | GET    | /categories/:id/symptoms | Daftar gejala sesuai kategori                      |
 | GET    | /symptoms/:id            | Membaca satu gejala                                |
-| POST   | /facility                | Mendapatkan list faskes melalui filter request body|
-| GET    | /facility/:id            | Detail faskes berdasarkan id                       |
+| POST   | /facilities/:filter      | Mendapatkan list faskes melalui filter pada query  |
+| GET    | /facilities/id/:id       | Detail faskes berdasarkan id                       |
+| GET    | /provinces               | Mendapatkan list provinsi (tidak ada filter)       |
+| GET    | /city/:province          | Mendapatkan list kota berdasarkan provinsi         |
+| GET    | /loc                     | Mendapatkan list provinsi & kota yang digabungkan  |
 
 
 > **Dikerjakan dengan `github workflow pull request`**
@@ -37,26 +40,26 @@ Kita sedang mengembangkan REST API DiagnoAkses Version 1.0
 - updatedAt : DATE
 
 **Facility**
-- id 
-- name 
-- address
-- telephone
-- lat
-- lng
-- distance
-- type 
-- image
+- kode_faskes : VARCHAR PK
+- facility : VARCHAR
+- province : VARCHAR FK
+- city : VARCHAR FK
+- type : VARCHAR FK
+- gmap_url : VARCHAR 
+- address : TEXT
+- telephone : VARCHAR 
+- geography : GEOGRAPHY
+- lat : FLOAT
+- long : FLOAT
 
+**Province**
+- province : VARCHAR PK
 
-**FacilityDetail**
-- id 
-- name 
-- address
-- telephone
-- lat
-- lng
-- distance
-- type 
-- image
-- schedule[] 
-- paramedice[]
+**City**
+- city : VARCHAR PK
+- province : VARCHAR FK
+
+**Location**
+- name : VARCHAR 
+- type : VARCHAR ENUM('city', 'province')
+
