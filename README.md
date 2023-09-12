@@ -4,17 +4,17 @@ Kita sedang mengembangkan REST API DiagnoAkses Version 1.0
 
 [➡ API Documentation](https://documenter.getpostman.com/view/20472929/2s9YC1Vtv8)
 
-| Method | Route                    | Description                                        |
-| ------ | ------------------------ | ---------------------------------------------------|
-| GET    | /                        | Redirect ke API DOC                                |
-| GET    | /categories              | Daftar kategori gejala                             |
-| GET    | /categories/:id/symptoms | Daftar gejala sesuai kategori                      |
-| GET    | /symptoms/:id            | Membaca satu gejala                                |
-| POST   | /facilities/:filter      | Mendapatkan list faskes melalui filter pada query  |
-| GET    | /facilities/id/:id       | Detail faskes berdasarkan id                       |
-| GET    | /provinces               | Mendapatkan list provinsi (tidak ada filter)       |
-| GET    | /city/:province          | Mendapatkan list kota berdasarkan provinsi         |
-| GET    | /loc                     | Mendapatkan list provinsi & kota yang digabungkan  |
+| Method | Route                    | Description                                          |
+| ------ | ------------------------ | -----------------------------------------------------|
+| GET    | /                        | Redirect ke API DOC                                  |
+| GET    | /categories              | Daftar kategori gejala                               |
+| GET    | /categories/:id/symptoms | Daftar gejala sesuai kategori                        |
+| GET    | /symptoms/:id            | Membaca satu gejala                                  |
+| POST   | /facilities/:filter      | Mendapatkan list faskes melalui filter pada query    |
+| GET    | /facilities/id/:id       | Detail faskes berdasarkan id                         |
+| GET    | /provinces               | Mendapatkan list provinsi (tidak ada filter)         |
+| GET    | /cities                  | Mendapatkan list kota berdasarkan provinsi pada query|
+| GET    | /loc                     | Mendapatkan list provinsi & kota yang digabungkan    |
 
 
 > **Dikerjakan dengan `github workflow pull request`**
