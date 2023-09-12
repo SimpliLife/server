@@ -10,7 +10,7 @@ router
   .get("/facilities/:filter", ControllerFaskes.getListFaskes)
   .get("/facilities/id/:id", ControllerFaskes.faskesById)
   .get("/provinces", ControllerFaskes.listProvince)
-  .get("/city/:province", ControllerFaskes.listCityByProvinces)
+  .get("/cities", ControllerFaskes.listCityByProvinces)
   .get("/loc", ControllerFaskes.unionProvinceCity)
 
 module.exports = router
