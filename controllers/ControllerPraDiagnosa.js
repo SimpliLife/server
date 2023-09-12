@@ -8,6 +8,11 @@ class ControllerPraDiagnosa {
       "1.": "GET /categories",
       "2.": "GET /categories/:id/symptoms",
       "3.": "GET /symptoms/:id",
+      "4.": "GET /provinces",
+      "5.": "GET /cities/:province",
+      "6.": "GET /loc",
+      "7.": "GET /facilities/id/:id",
+      "8.": "GET /facilities/:filter  [filter=location|name|city|province]"
     })
   }
   static listCategory(req, res, next) {
