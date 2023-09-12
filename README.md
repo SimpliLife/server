@@ -13,7 +13,7 @@ Kita sedang mengembangkan REST API DiagnoAkses Version 1.0
 | POST   | /facilities/:filter      | Mendapatkan list faskes melalui filter pada query  |
 | GET    | /facilities/id/:id       | Detail faskes berdasarkan id                       |
 | GET    | /provinces               | Mendapatkan list provinsi (tidak ada filter)       |
-| GET    | /city/:province          | Mendapatkan list kota berdasarkan provinsi         |
+| GET    | /cities/:province        | Mendapatkan list kota berdasarkan provinsi         |
 | GET    | /loc                     | Mendapatkan list provinsi & kota yang digabungkan  |
 
 
