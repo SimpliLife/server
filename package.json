@@ -19,7 +19,9 @@
   },
   "homepage": "https://github.com/SimpliLife/server#readme",
   "dependencies": {
+    "axios": "^1.5.0",
     "cors": "^2.8.5",
+    "csvtojson": "^2.0.10",
     "express": "^4.18.2",
     "pg": "^8.11.3",
     "sequelize": "^6.33.0"
