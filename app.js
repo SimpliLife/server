@@ -12,6 +12,9 @@ app.use((err, req, res, next) => {
   let code = err.code
   let message = ""
   switch (code) {
+    case 400:
+      message = "Bad request"
+      break;
     case 404:
       message = "Data not found"
       break;
